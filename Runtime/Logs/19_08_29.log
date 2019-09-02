@@ -1,0 +1,144 @@
+[ 2019-08-29T10:47:58+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.000600s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000259s ]
+
+[ 2019-08-29T10:48:05+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.002897s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000258s ]
+
+[ 2019-08-29T10:49:12+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000199s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.000578s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000563s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1567046952,`last_login_ip`='3232251905' WHERE ( `id` = 1 ) [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.002241s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.000747s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.001224s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,3232251905,'member',1,1567046952,'操作url：/onthink/index.php?s=/admin/public/login.html') [ RunTime:0.000298s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000249s ]
+NOTIC: [8] Undefined offset: 1 /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1566960552 ) LIMIT 1   [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.000530s ]
+SQL: UPDATE `onethink_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.002281s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1567046952,`last_login_ip`='3232251905' WHERE ( `uid` = 1 ) [ RunTime:0.000239s ]
+
+[ 2019-08-29T10:51:09+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/user/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.000529s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'jeff' ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `email` = '12@qq.com' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: INSERT INTO `onethink_ucenter_member` (`username`,`password`,`email`,`reg_time`,`reg_ip`,`update_time`,`status`) VALUES ('jeff','fad5f8788c575dd7f3c1445c67142b33','12@qq.com',1567047069,'3232251905',1567047069,1) [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.003635s ]
+SQL: INSERT INTO `onethink_member` (`uid`,`nickname`,`status`) VALUES (26,'jeff',1) [ RunTime:0.000513s ]
+
+[ 2019-08-29T10:51:26+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/user/changestatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-08-29T10:51:28+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/user/changestatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.000763s ]
+SQL: UPDATE `onethink_member` SET `status`=1 WHERE ( `uid` IN ('26') ) [ RunTime:0.003248s ]
+
+[ 2019-08-29T10:51:47+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/auth_manager/writegroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `onethink_auth_group` [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: rules /opt/lampp/htdocs/onthink/ThinkPHP/Library/Think/Model.class.php 第 993 行.
+SQL: INSERT INTO `onethink_auth_group` (`title`,`description`,`id`,`module`,`type`) VALUES ('观看','',0,'admin',1) [ RunTime:0.000249s ]
+
+[ 2019-08-29T10:52:03+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/auth_manager/writegroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `onethink_auth_group` [ RunTime:0.000775s ]
+NOTIC: [8] Undefined index: description /opt/lampp/htdocs/onthink/ThinkPHP/Library/Think/Model.class.php 第 993 行.
+SQL: UPDATE `onethink_auth_group` SET `rules`='7,8,9,10,11,12,13,14,17,79',`module`='admin',`type`=1 WHERE ( `id` = 3 ) [ RunTime:0.002077s ]
+
+[ 2019-08-29T10:52:19+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.001666s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'jeff' ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1567047139,`last_login_ip`='3232251905' WHERE ( `id` = 26 ) [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.000520s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 26 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.000435s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.000423s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,26,3232251905,'member',26,1567047139,'操作url：/onthink/index.php?s=/admin/public/login.html') [ RunTime:0.000227s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000233s ]
+NOTIC: [8] Undefined offset: 1 /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 26 ) AND ( `create_time` > 1566960739 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.000568s ]
+SQL: UPDATE `onethink_member` SET `score`=score+10 WHERE ( uid=26 AND status>-1 ) [ RunTime:0.000302s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1567047139,`last_login_ip`='3232251905' WHERE ( `uid` = 26 ) [ RunTime:0.000428s ]
+
+[ 2019-08-29T10:52:39+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.000618s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1567047159,`last_login_ip`='3232251905' WHERE ( `id` = 1 ) [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.000552s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.000520s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.000498s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,3232251905,'member',1,1567047159,'操作url：/onthink/index.php?s=/admin/public/login.html') [ RunTime:0.000262s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000381s ]
+NOTIC: [8] Undefined offset: 1 /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /opt/lampp/htdocs/onthink/Application/Common/Common/function.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1566960759 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1567047159,`last_login_ip`='3232251905' WHERE ( `uid` = 1 ) [ RunTime:0.000293s ]
+
+[ 2019-08-29T11:30:21+08:00 ] 192.168.64.1 /onthink/index.php?s=/admin/auth_manager/writegroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `onethink_auth_group` [ RunTime:0.000928s ]
+NOTIC: [8] Undefined index: description /opt/lampp/htdocs/onthink/ThinkPHP/Library/Think/Model.class.php 第 993 行.
+SQL: UPDATE `onethink_auth_group` SET `rules`='1,2,7,8,9,10,11,12,13,14,15,16,17,18,79',`module`='admin',`type`=1 WHERE ( `id` = 3 ) [ RunTime:0.000486s ]
+
